@@ -1,0 +1,43 @@
+{
+  "name": "BlockStarter",
+  "description": "Node.js + Ethereum",
+  "author": "Group E",
+  "version": "4.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "prod": "node src/app.js",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "child_process": "^1.0.2",
+    "commander": "^2.9.0",
+    "cors": "^2.8.1",
+    "ethereumjs-testrpc": "^4.0.1",
+    "exec": "^0.2.1",
+    "express": "^4.13.3",
+    "express-react-views": "^0.10.2",
+    "jquery": "^3.2.1",
+    "jsonfile": "^3.0.0",
+    "jwt-simple": "^0.5.1",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.6.8",
+    "passport": "^0.3.2",
+    "path": "^0.12.7",
+    "prompt": "^1.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "web3": "^0.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "(MIT OR Apache-2.0)"
+}

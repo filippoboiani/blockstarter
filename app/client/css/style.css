@@ -1,0 +1,291 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    z-index: 1000
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*.navbar-light {
+  background-color: #ffffff;
+}*/
+
+.navbar-custom {
+    /*background-color: #2196f3;*/
+    background-color: #0275d8;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.navbar-custom li {
+    margin-right: 20px;
+}
+
+.navbar-custom li span {
+    margin-right: 8px;
+}
+
+.navbar-custom-image {
+    height: 40px;
+    width: 85px;
+}
+
+.nav-item-custom {
+    line-height: 2.4;
+}
+
+#mapCanvas {
+    width: 100%;
+    height: 89vh;
+    margin: 5px;
+    padding: 5px;
+}
+
+#background {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('images/blockchain.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.large-container {
+    max-width: 100%;
+}
+
+.strong-header {
+    text-transform: uppercase;
+}
+
+.custom-list-group-item {
+    margin: 3px 0;
+    border-radius: 0;
+    /*border: 1px solid rgba(33,150,243,0.2);*/
+    /*box-shadow: 1px 1px 10px rgba(33,150,243,0.2);*/
+}
+
+#content {
+    overflow: auto;
+    position: relative;
+}
+
+.left-info-fixed {
+    position: relative;
+    height: 70vh;
+    overflow: auto;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.add-poi-form {
+    padding: 20px;
+}
+
+.vertical-position-60 {
+    top: 50px;
+}
+
+.vertical-position-70 {
+    top: 70px;
+}
+
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+
+.vertical-offset-70 {
+    padding-top: 70px;
+}
+
+.vertical-offset-50 {
+    padding-top: 50px;
+}
+
+.vertical-offset-30 {
+    padding-top: 30px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.img-user-list {
+    width: 110%;
+}
+
+.jumbotron.event {
+    background: #000 url('images/btc-to-eur.jpg') center center;
+    background-position-y: 23%;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.progress-custom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    background-color: #eceeef;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+
+.progress-bar-custom {
+    height: 1.4rem;
+    color: #fff;
+    background-color: #0275d8;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.panel {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.actions {
+    position: absolute;
+    width: 300px;
+    margin: 10px;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5)
+}
+
+#pac-input {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5)
+}
+
+.margin-8 {
+    margin-top: 8px;
+}
+
+
+/*Designate how the animation will take place*/
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.map-bg {
+    background: url(images/map-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Alter the top and left positions to sit on top of your map location */
+
+.marker {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 130px;
+    /*positions our marker*/
+    left: 200px;
+    /*positions our marker*/
+    display: block;
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 38px;
+    left: 38px;
+    background: rgba(5, 124, 255, 1);
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.pin-effect {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: rgba(5, 124, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulsate 2400ms ease-out infinite;
+}
+
+
+/* Adjusts the background image and marker for smaller screens */
+
+@media only screen and (max-width: 414px) {
+    .map-bg {
+        background-position: -100px 0px;
+    }
+    .marker {
+        left: 100px;
+    }
+}

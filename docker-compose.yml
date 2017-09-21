@@ -1,0 +1,18 @@
+version: '2'
+services:
+  node-app:
+    build: app
+    ports:
+      - "4000:8080"
+    volumes:
+      - ./app/src:/myapp/src
+    depends_on:
+      - mongodb
+    environment:
+      - PUBLIC_APP_PORT=4000
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+#    command: npm start
+
+  mongodb:
+    image: "mongo:latest"

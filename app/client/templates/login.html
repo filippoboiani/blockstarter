@@ -1,0 +1,32 @@
+<div id="background"></div>
+<div id="content">
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-3 col-lg-offset-3">
+                <div class="panel panel-default animated fadeInDown">
+                    <div class="panel-heading">
+                        <div class="row-fluid user-row">
+                            <!--<img src="css/images/logo-pin.png" class="img-responsive" alt="" />-->
+                            <h1 class="text-center">Blockstarter 4.0</h1>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form" class="form-signin" ng-submit="login(user)">
+                            <fieldset>
+                                <label class="panel-login"><div class="login_result"></div></label>
+                                <input class="form-control" placeholder="Address" id="username" type="number" ng-model="user.address">
+                                <!--<input class="form-control" placeholder="Password" id="password" type="password" ng-model="user.pass">-->
+                                <div>
+                                    <p class="text-danger">
+                                        <b>{{error}}</b>
+                                    </p>
+                                </div>
+                                <input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" id="login" value="Login">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

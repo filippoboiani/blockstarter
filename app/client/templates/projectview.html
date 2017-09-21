@@ -1,0 +1,73 @@
+<div class="jumbotron event" style="padding: 4rem 1rem 0.5rem 1rem;">
+    <div class="container animated fadeInLeft">
+        <h1 class="display-4">{{project.title}}</h1>
+        <p class="text-mute"><em>{{project.address}}</em></p>
+        <p class="text-muted large">Goal reached: <span class="label" ng-class=" project.goalReached ? 'label-success' : 'label-warning'">{{project.goalReached}}</span></p>
+        <div class="text-right animated fadeInRight" ng-show="project.goalReached">
+            <h1 class="display-4"><span class="lead">Available: </span><strong> {{project.fundingStatus}} </strong><small>eth</small> </h1>
+
+        </div>
+    </div>
+
+
+</div>
+<div ng-show="alertSucc" class="alert alert-success" style="margin-top: -2rem;">
+    <a class="close" ng-click="close()" aria-label="close">&times;</a>
+    <p>{{message}}</p>
+</div>
+<div ng-show="alertErr" class="alert alert-danger" style="margin-top: -2rem;">
+    <a class="close" ng-click="close()" aria-label="close">&times;</a>
+    <p>You don't have the right to claim shares</p>
+</div>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animated fadeInRight">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <button type="button" ng-show="project.goalReached" ng-click="claimShares(project.address, project.token)" class="btn btn-warning"> Claim Shares </button>
+                    <button type="button" ng-show="project.goalReached" ng-click="showShares(project.token)" class="btn btn-primary"> Show Shares </button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="input-group" ng-show="project.goalReached">
+                        <input type="number" class="form-control" placeholder="" ng-model="withdrawAmount" />
+                        <span class="input-group-btn"><button type="button" ng-click="withdrawProject(project.address, withdrawAmount)" class="btn btn-warning"> Withdraw </button></span>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin: 2rem 0 0.4rem 0">Campaing progress: </p>
+            <div class="progress-custom lg w3-light-grey">
+                <div class="color-blue progress-bar-custom" ng-style="{width: project.finalFundings/project.fundingGoal*100 +'%'}">{{project.finalFundings/project.fundingGoal*100 | number : 1}}%</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 text-left">
+                    <h1 class="display-4"><strong>{{project.finalFundings}}</strong> <small>eth</small></h1>
+                    <p class="lead">Amount Raised</p>
+                </div>
+                <!--/col-->
+                <div class="col-xs-12 col-sm-6 text-right">
+                    <h1 class="display-4"><strong> {{project.fundingGoal}} </strong><small>eth</small> </h1>
+                    <p class="lead">Funding Goal</p>
+                </div>
+                <!--/col-->
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h3><small>Deadline:</small> <span class="lead">{{project.deadline | date: "dd MMM yyyy 'at' HH:mm"}}</span></h3>
+                </div>
+                <div class="input-group col-xs-12 col-sm-6 " ng-show="!project.goalReached">
+                    <input type="number" class="form-control" placeholder="" ng-model="backAmount" />
+                    <span class="input-group-btn"><button type="button" ng-click="fundProject(project.address, backAmount)" class="btn btn-primary"> Fund </button></span>
+                </div>
+            </div>
+
+            <hr/>
+            <!--1st Large Banner Image -->
+            <h3>Description</h3>
+            <p class="lead">{{project.description}}</p>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div id="article-page">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+            <form class="add-poi-form">
+                <h4 class="strong-header">Add a new Project</h4>
+                <hr />
+                <p class="lead">Project:</p>
+                <div class="form-group">
+                    <label for="project-title">Title:</label>
+                    <input type="text" class="form-control" id="project-title" ng-model="project.title" placeholder="Title...">
+                </div>
+                <div class="form-group">
+                    <label for="project-description">Description:</label>
+                    <textarea type="text" class="form-control" rows="3" id="project-description" ng-model="project.description" placeholder="Description..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="project-goal">Funding Goal:</label>
+                    <input type="number" class="form-control" id="project-goal" ng-model="project.goal" placeholder="Goal in ethers...">
+                </div>
+                <div class="form-group">
+                    <label for="project-duration">Funding Duration :</label>
+                    <input type="number" class="form-control" id="project-duration" ng-model="project.duration" placeholder="Duration in minutes...">
+                </div>
+                <p class="lead">Shares:</p>
+                <div class="form-group">
+                    <label for="project-supply">Initial Supply:</label>
+                    <input type="number" class="form-control" id="project-supply" ng-model="token.initialSupply" placeholder="Initial Supply...">
+                </div>
+                <div class="form-group">
+                    <label for="project-title">Tokens Available:</label>
+                    <input type="number" class="form-control" id="project-title" ng-model="project.price" placeholder="Shares Available...">
+                </div>
+                <div class="form-group">
+                    <label for="project-title">Token Name:</label>
+                    <input type="text" class="form-control" id="project-title" ng-model="token.tokenName" placeholder="Name...">
+                </div>
+                <div class="form-group">
+                    <label for="project-title">Token Symbol:</label>
+                    <input type="text" class="form-control" id="project-title" ng-model="token.tokenSymbol" placeholder="Symbol...">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-sm" ng-click="createProject(project, token)">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
