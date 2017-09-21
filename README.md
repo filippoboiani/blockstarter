@@ -1,14 +1,15 @@
 # BlockStarter 4.0 Final Project
 
-Group E
-- Ahmad Jawid Jamiulahmadi (380457) @jawid
-- Aqa Mustafa Akhlaqi (380455) @akhlaqi
-- Filippo Boiani (387680) @filippo.boiani
-- Gabriel Vilen (387555) @gavil
-- Hekmatullah Sajid (380454) @hekmatullah.sajid
-- Riccardo Sibani (382708) @riccardo.sibani
-- Rohullah Ayobi (380448) @rohullahayobi
-- Stefan Stojkovski (387529) @stefan.stojkovski
+The distributed database blockchain is drastically increasing popularity in software development and many other fields. In this report we present Blockstarter 4.0, a kickstarter-inspired project built upon the blockchain for the course  Advanced Enterprise Computing  at TU-Berlin, summer semester 2017. Blockstarter 4.0 consists of two parts, first one of a backend and smart contracts, and the second part (extension) handles projects with deadlines.
+
+The first part,  backend and smart contracts , has the following requirements:
+    - allows project owners to withdraw funds when a project has been funded successfully
+(and not be able to withdraw if the funding goal has not been reached, yet)
+    - allows backers to retrieve a share (token) for each project they invest in
+
+In the second part we choose  Projects with deadline :
+    - A project has a deadline until which the funding goal must be reached. Otherwise, the
+project is automatically cancelled and all backers are refunded.
 
 ## How to run it
 - Go to project folder. 
@@ -83,32 +84,6 @@ Dev Tools:
 - Client: Angular.js
 
 
-## Tasks (25; 25 done, 0 in progress, 0 todo)
-- Project contract: withdraw funds (only owner) [ X ]
-- Project contract: claim project shares (only backers) [ X ]
-- MongoDB Connection [ X ]
-- MongoDB Schema Definition [ X ]
-- Create a Project API [ X ]
-- Show Project Info API [ X ]
-- List Projects API [ X ]
-- List Created Project API [ X ]
-- List Backed Project API [ X ]
-- Login API (passport) [ X ]
-- Back a Project API [ X ]
-- Withdraw funds API [ X ]
-- Get Project API [ X ]
-- Show Status API [ X ]
-- Claim Shares API [ X ]
-- Show Share API [ X ]
-- Kill project API [ X ]
-- Project deadline [ X ]
-- Automatic kill when the goal is not met [ X ]
-- Login View [ X ]
-- List projects View [ X ]
-- Create a Project View [ X ]
-- Project Info View [ X ]
-- Back a Project View [ X ]
-- Kill Project View [ X ]
 
 
 
