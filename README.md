@@ -2,6 +2,8 @@
 
 The distributed database blockchain is drastically increasing popularity in software development and many other fields. In this report we present Blockstarter 4.0, a kickstarter-inspired project built upon the blockchain for the course  Advanced Enterprise Computing  at TU-Berlin, summer semester 2017. Blockstarter 4.0 consists of two parts, first one of a backend and smart contracts, and the second part (extension) handles projects with deadlines.
 
+![alt text](https://github.com/filippoboiani/blockstarter/blob/master/choco.png)
+
 The first part,  backend and smart contracts , has the following requirements:
     - allows project owners to withdraw funds when a project has been funded successfully
 (and not be able to withdraw if the funding goal has not been reached, yet)
